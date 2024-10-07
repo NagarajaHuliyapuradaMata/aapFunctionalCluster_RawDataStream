@@ -20,6 +20,13 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class interface_RawDataStream_RawDataStreamClient{
+   public:
+      virtual void Connect   (void) = 0;
+      virtual void ReadData  (void) = 0;
+      virtual void Shutdown  (void) = 0;
+      virtual void WriteData (void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

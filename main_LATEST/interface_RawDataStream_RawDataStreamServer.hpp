@@ -20,6 +20,17 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class interface_RawDataStream_RawDataStreamServer{
+   public:
+/*
+      virtual void ReadData          (void) = 0;
+      virtual void Shutdown          (void) = 0;
+*/
+      virtual void WaitForConnection (void) = 0;
+/*
+      virtual void WriteData         (void) = 0;
+*/
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
